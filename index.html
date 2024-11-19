@@ -1,13 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        /* Geral */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #232323;
+            color: #fff;
+        }
+
+        /* Cabeçalho e Menu */
+        .header {
+            background-color: #232323;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .menu li {
+            margin: 0 20px;
+        }
+
+        .navbar .menu li a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .menu li a:hover {
+            color: #E3749C;
+        }
+
+        /* Seção de Portfólio */
+        .portfolio {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 36px;
+            color: #E3749C;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border: 2px solid #E3749C;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Seção "Sobre Mim" */
+        .about {
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .about-image img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-text {
+            max-width: 600px;
+            padding-left: 20px;
+        }
+
+        .about h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            color: #E3749C;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Rodapé */
+        .footer {
+            background-color: #232323;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer a {
+            color: #E3749C;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .portfolio-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <!-- Cabeçalho e Menu -->
+    <header class="header">
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Portfólio -->
+    <section class="portfolio" id="portfolio">
+        <h2>Meu Portfólio</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item"><img src="https://i.ibb.co/JrL2GYx/image1.jpg" alt="Projeto 1"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/h8gSjGQ/image2.jpg" alt="Projeto 2"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/85dfDNL/image3.jpg" alt="Projeto 3"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/JnKrJ3Z/image4.jpg" alt="Projeto 4"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/2NBDFzJ/image5.jpg" alt="Projeto 5"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/BqZf8qB/image6.jpg" alt="Projeto 6"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/521T7Wm/image7.jpg" alt="Projeto 7"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/Jz7B9hz/image8.jpg" alt="Projeto 8"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/QXHvtCt/image9.jpg" alt="Projeto 9"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/R7Jmy7w/image10.jpg" alt="Projeto 10"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/ZSxccFw/image11.jpg" alt="Projeto 11"></div>
+            <div class="portfolio-item"><img src="https://i.ibb.co/DfMVyh2/image12.jpg" alt="Projeto 12"></div>
+        </div>
+    </section>
+
+    <!-- Seção "Sobre Mim" -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://i.ibb.co/8rCn2CP/Whats-App-Image-2024-11-19-at-16-12-05.jpg">
+            </div>
+            <div class="about-text">
+                <h2>Sobre Mim</h2>
+                <p>Sou Gabriela Lopes, Designer Gráfico especializada em criar peças visuais que comunicam e inspiram. Trabalho com design de pôsteres e posts para redes sociais, sempre buscando unir criatividade e funcionalidade. Estou constantemente aprimorando minhas habilidades para entregar projetos impactantes e conectados às necessidades dos clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer" id="contact">
+        <p>© 2024 Meu Portfólio. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.behance.net/gabriela_lopes">Behance</a> | <a href="mailto:lopesgabriela.s2003@gmail.com">Email</a>
+        </div>
+    </footer>
 
 </body>
 </html>
-

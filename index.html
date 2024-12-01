@@ -71,6 +71,13 @@
             transform: scale(1.05);
         }
 
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ccc;
+            text-align: center;
+        }
+
         /* Seção "Sobre Mim" */
         .about {
             display: flex;
@@ -111,7 +118,7 @@
         .footer {
             background-color: #232323;
             color: #fff;
-            text-align: center;
+            text-align: center; /* Centraliza o texto */
             padding: 20px;
         }
 
@@ -119,6 +126,29 @@
             color: #E3749C;
             text-decoration: none;
             margin: 0 10px;
+        }
+
+        .contact-highlight {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-highlight a {
+            font-size: 18px;
+            color: #E3749C;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-highlight a:hover {
+            color: #FF8790;
+        }
+
+        .contact-highlight span {
+            color: #ccc;
         }
 
         /* Responsividade */
@@ -152,18 +182,42 @@
     <section class="portfolio" id="portfolio">
         <h2>Meu Portfólio</h2>
         <div class="portfolio-gallery">
-            <div class="portfolio-item"><img src="https://i.imgur.com/arfdFHa.png" alt="Projeto 1"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/FSYde9B.png" alt="Projeto 2"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/lkEKGpQ.png" alt="Projeto 3"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/DWFInJi.png" alt="Projeto 4"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/f2yt0Id.png" alt="Projeto 5"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/MWHNYB1.png" alt="Projeto 6"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/cDVdMV9.png" alt="Projeto 7"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/vhFsBCl.png" alt="Projeto 8"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/wy3fgE2.png" alt="Projeto 9"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/eLKCNfy.png" alt="Projeto 10"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/WcbntkM.png" alt="Projeto 11"></div>
-            <div class="portfolio-item"><img src="https://i.imgur.com/QQWjEn8.png" alt="Projeto 12"></div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/arfdFHa.png" alt="Projeto 1">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/FSYde9B.png" alt="Projeto 2">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/lkEKGpQ.png" alt="Projeto 3">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/DWFInJi.png" alt="Projeto 4">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/f2yt0Id.png" alt="Projeto 5">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/MWHNYB1.png" alt="Projeto 6">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/cDVdMV9.png" alt="Projeto 7">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/vhFsBCl.png" alt="Projeto 8">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/wy3fgE2.png" alt="Projeto 9">
+            <p class="caption">Postagem Instagram - Nova Coleção de Jóias</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/eLKCNfy.png" alt="Projeto 10">
+            <p class="caption">Convite de Aniversário</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/WcbntkM.png" alt="Projeto 11">
+            <p class="caption">Convite de Aniversário</p>
+            </div>
+            <div class="portfolio-item"><img src="https://i.imgur.com/QQWjEn8.png" alt="Projeto 12">
+            <p class="caption">III Ciclo do Documentário Brasileiro Vivências Queer</p>
+            </div>
         </div>
     </section>
 
@@ -183,8 +237,10 @@
     <!-- Rodapé -->
     <footer class="footer" id="contact">
         <p>© 2024 Meu Portfólio. Todos os direitos reservados.</p>
-        <div class="social-icons">
-            <a href="https://www.behance.net/gabriela_lopes">Behance</a> | <a href="mailto:lopesgabriela.s2003@gmail.com">Email</a>
+        <div class="contact-highlight">
+            <a href="https://www.behance.net/gabriela_lopes" target="_blank">Acesse meu Behance</a>
+            <span>|</span>
+            <a href="mailto:lopesgabriela.s2003@gmail.com">Entre em contato por email</a>
         </div>
     </footer>
 
